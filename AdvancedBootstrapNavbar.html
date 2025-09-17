@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Bootstrap Navbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    .Money-Options {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .Money-Options2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .col-md-4 {
+      width: 400px;
+    }
+  </style>
+
+  <body>
+
+    
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">MySite</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarAdvanced"
+          aria-controls="navbarAdvanced"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarAdvanced">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Services</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Web Design</a></li>
+                <li><a class="dropdown-item" href="#">App Development</a></li>
+                <li><a class="dropdown-item" href="#">SEO</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Search -->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Seach..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Go</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-dark position-relative text-white" style="height: 100vh">
+      <img
+        src="https://picsum.photos/1920/1080"
+        class="w-100 h-100 object-fit-cover position-absolute top-0 start-0"
+        alt=""
+      />
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
+      ></div>
+      <div
+        class="d-flex flex-column justify-content-center align-items-center h-100 position-relative text-center"
+      >
+        <h1 class="fw-bold display-3">Build Something Amazing</h1>
+        <p class="lead mb-4">Bootstrap makes it fast and easy</p>
+        <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-lg border-0 h-100">
+            <img
+              src="https://picsum.photos/500/300"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Creative Design</h5>
+              <p class="card-text">
+                Modern and responsive design solutions for your business.
+              </p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-lg border-0 h-100">
+        <img
+          src="https://picsum.photos/501/300"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Web Development</h5>
+          <p class="card-text">
+            Fast and scalable applications with latest technologies.
+          </p>
+          <a href="#" class="btn btn-success">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-lg border-0 h-100">
+        <img
+          src="https://picsum.photos/502/300"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">SEO Marketing</h5>
+          <p class="card-text">
+            Boost your visibility and reach your audience effectively.
+          </p>
+          <a href="#" class="btn btn-warning">Get Started</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Money-Options">
+      <div class="container py-5">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card border-primary shadow">
+              <div class="card-header bg-primary text-white">Basic</div>
+              <div class="card-body">
+                <h3>$9<span class="fs-6">/month</span></h3>
+                <ul class="list-unstyled">
+                  <li>✅ 5 Projects</li>
+                  <li>✅ 10 GB Storage</li>
+                  <li>✅ Email Support</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary">Choose</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-5">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card border-success shadow">
+              <div class="card-header bg-success text-white">Pro</div>
+              <div class="card-body">
+                <h3>$29<span class="fs-6">/month</span></h3>
+                <ul class="list-unstyled">
+                  <li>✅ 20 Projects</li>
+                  <li>✅ 100 GB Storage</li>
+                  <li>✅ Chat + Priority Support</li>
+                </ul>
+                <a href="#" class="btn btn-success">Choose</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-5">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card border-warning shadow">
+              <div class="card-header bg-warning text-dark">Enterprise</div>
+              <div class="card-body">
+                <h3>$99<span class="fs-6">/month</span></h3>
+                <ul class="list-unstyled">
+                  <li>✅ Unlimited Projects</li>
+                  <li>✅ 5 TB Storage</li>
+                  <li>✅ 24/7 Support</li>
+                </ul>
+                <a href="#" class="btn btn-warning text-dark">Choose</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Money-Options2">
+      <div class="container py-5">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card border-primary shadow">
+              <div class="card-header bg-primary text-white">Basic</div>
+              <div class="card-body">
+                <h3>$19<span class="fs-6">/month</span></h3>
+                <ul class="list-unstyled">
+                  <li>✅ 15 Projects</li>
+                  <li>✅ 25 GB Storage</li>
+                  <li>✅ Priority Email Support</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary">Choose</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-5">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card border-success shadow">
+              <div class="card-header bg-success text-white">Pro</div>
+              <div class="card-body">
+                <h3>$49<span class="fs-6">/month</span></h3>
+                <ul class="list-unstyled">
+                  <li>✅ 50 Projects</li>
+                  <li>✅ 500 GB Storage</li>
+                  <li>✅ Phone + Chat + Priority Support</li>
+                </ul>
+                <a href="#" class="btn btn-success">Choose</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-5">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card border-warning shadow">
+              <div class="card-header bg-warning text-dark">Enterprise</div>
+              <div class="card-body">
+                <h3>$75<span class="fs-6">/month</span></h3>
+                <ul class="list-unstyled">
+                  <li>✅ 100 Projects</li>
+                  <li>✅ 1 TB Storage</li>
+                  <li>✅ 24/7 Support</li>
+                </ul>
+                <a href="#" class="btn btn-warning text-dark">Choose</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <ul class="timeline list-unstyled">
+            <li class="mb-5 position-relative">
+              <span
+                class="position-absolute top-0 start-0 translate-middle p-3 bg-primary rounded-circle"
+              ></span>
+              <div class="ms-5">
+                <h5 class="fw-bold">Step 1</h5>
+                <p class="text-muted">Register and create your profile.</p>
+              </div>
+            </li>
+            <li class="mb-5 position-relative">
+              <span
+                class="position-absolute top-0 start-0 translate-middle p-3 bg-success rounded-circle"
+              ></span>
+              <div class="ms-5">
+                <h5 class="fw-bold">Step 2</h5>
+                <p class="text-muted">
+                  Upload your documents for verification.
+                </p>
+              </div>
+            </li>
+            <li class="position-relative">
+              <span
+                class="position-absolute top-0 start-0 translate-middle p-3 bg-danger rounded-circle"
+              ></span>
+              <div class="ms-5">
+                <h5 class="fw-bold">Step 3</h5>
+                <p class="text-muted">Get started with your dashboard.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .timeline li::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 40px;
+        bottom: 0;
+        width: 2px;
+        background: #dee2e6;
+      }
+    </style>
+
+    <div class="accordion accordion-flush" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="false"
+          >
+            <i class="bi bi-question-circle me-2"></i> What is Bootstrap?
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            Bootstrap is a front-end toolkit for faster and easier web
+            development.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+          >
+            <i class="bi bi-gear me-2"></i> How do I install it?
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            You can install Bootstrap via CDN, npm, or download the source
+            files.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">Chat</div>
+        <div class="card-body" style="height: 300px; overflow-y: auto">
+          <div class="d-flex mb-3">
+            <div class="p-2 bg-light rounded">Hello 👋</div>
+          </div>
+          <div class="d-flex justify-content-end mb-3">
+            <div class="p-2 bg-primary text-white rounded">
+              Hi! How are you?
+            </div>
+          </div>
+          <div class="d-flex mb-3">
+            <div class="p-2 bg-light rounded">I’m good, thanks 😊</div>
+          </div>
+
+          <div class="d-flex justify-content-end mb-3">
+            <div class="p-2 bg-primary text-white rounded">
+              Can you help me with my code?
+            </div>
+          </div>
+
+          <div class="d-flex mb-3">
+            <div class="p-2 bg-light rounded">
+              Yes, of course what do you need help with?✅
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end mb-3">
+            <div class="p-2 bg-primary text-white rounded">
+              What is 3 to the power of 3 x 1/3?
+            </div>
+          </div>
+
+          <div class="d-flex mb-3">
+            <div class="p-2 bg-light rounded">
+              The answer to 3 to the power of 3 x 1/3 is 9 because 3 to the
+              power of 3 is 27 and 27 x 1/3 is 9!🙂
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Type a message..."
+            />
+            <button class="btn btn-primary">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card shadow-sm text-center">
+            <div class="card-body">
+              <i class="bi bi-people fs-1 text-primary"></i>
+              <h3 class="fw-bold">1,250</h3>
+              <p class="text-muted">Users</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm text-center">
+            <div class="card-body">
+              <i class="bi bi-cart fs-1 text-success"></i>
+              <h3 class="fw-bold">125</h3>
+              <p class="text-muted">Reviews</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm text-center">
+            <div class="card-body">
+              <i class="bi bi-cart fs-1 text-success"></i>
+              <h3 class="fw-bold">4.91/5⭐</h3>
+              <p class="text-muted">Review</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm text-center">
+            <div class="card-body">
+              <i class="bi bi-cart fs-1 text-success"></i>
+              <h3 class="fw-bold">4</h3>
+              <p class="text-muted">Sponsers</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm text-center">
+            <div class="card-body">
+              <i class="bi bi-cart fs-1 text-success"></i>
+              <h3 class="fw-bold">21</h3>
+              <p class="text-muted">Retrurns</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm text-center">
+            <div class="card-body">
+              <i class="bi bi-cart fs-1 text-success"></i>
+              <h3 class="fw-bold">320</h3>
+              <p class="text-muted">Orders</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm text-center">
+            <div class="card-body">
+              <i class="bi bi-currency-dollar fs-1 text-warning"></i>
+              <h3 class="fw-bold">$12.5K</h3>
+              <p class="text-muted">Revenue</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm text-center">
+            <div class="card-body">
+              <i class="bi bi-bar-chart fs-1 text-danger"></i>
+              <h3 class="fw-bold">75%</h3>
+              <p class="text-muted">Growth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
